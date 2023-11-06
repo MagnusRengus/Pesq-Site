@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+                        <meta charset="UTF-8">
+                        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+                        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UmidiGrow</title>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+<style>
+*{
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.html{
+  background-color:lightgray;  
+}
+.logo {
+ display:flex;
+ justify-content:center;
+
+}
+.menu{
+  display: flex;
+  justify-content: space-around;
+  opacity: 0.8;
+  background-color: #ffffff;
+  opacity: 1;
+  background-image:  radial-gradient(#000000 1.1px, transparent 1.1px), radial-gradient(#000000 1.1px, #ffffff 1.1px);
+  background-size: 44px 44px;
+  background-position: 0 0,22px 22px;
+
+ 
+}
+.Manoel{
+  color: #1E7CBF;
+  font-size:30px;
+  margin-top:50px ;
+  justify-content:left ;
+  text-decoration: none;
+}
+.Redes{
+  font-size:30px;
+  margin-top:50px ;
+  color: #1E7CBF;
+  justify-content: right;
+  text-decoration: none;
+  margin-right: 50px;
+}
+
+.menu li{
+font-size:35px;
+color:#1E7CBF;
+margin-top:50px ;
+}
+
+.Apre {
+  color:#40AB38;
+}
+.ApreP{
+  font-size:20px ;
+  text-align:center;
+}
+
+.Como{
+  color:#40AB38;
+  margin-top:400px ;
+  font-style:Courier, monospace ;
+}
+
+.Parat{
+  font-size:20px ;
+  text-align: center;
+}
+.Parat1{
+color:#1E7CBF;
+font-size:22px;
+font-style:Courier, monospace ;
+}
+
+
+.Produto h1 {
+  margin-top:10px ;
+  margin-bottom:5px ;
+  display:flex;
+  justify-content: center;
+  color:#1E7CBF;
+}
+ul, li { display: block; }
+
+                                                   #body {
+                                                          left: 50%;
+                                                          width: 609px;
+                                                          height: 405px;
+                                                          display: block;
+                                                          position: absolute;
+                                                          margin-left: -340px;
+                                                      }
+
+                                                      #body * {
+                                                          user-select: none;
+                                                          -ms-user-select: none;
+                                                          -moz-user-select: none;
+                                                          -khtml-user-select: none;
+                                                          -webkit-user-select: none;
+                                                          -webkit-touch-callout: none;
+                                                      }
+
+                                                      #body input { display: none; }
+
+                                                      #img-inner {
+                                                          top: 0;
+                                                          opacity: 0;
+                                                          width: 609px;
+                                                          height: 405px;
+                                                          display: block;
+                                                          position: absolute;
+                                                          
+                                                          transform: scale(0);
+                                                          -moz-transform: scale(0);
+                                                          -webkit-transform: scale(0);
+                                                          
+                                                          transition: all .7s ease-in-out;
+                                                          -moz-transition: all .7s ease-in-out;
+                                                          -webkit-transition: all .7s ease-in-out;
+                                                      }
+
+                                                      #img-inner img {
+                                                          width: 100%;
+                                                          height: 100%;
+                                                      }
+
+                                                      #img-inner:nth-of-type(1) {
+                                                          /* And... CSS3 image preloading :D */
+                                                          background-image:
+                                                              url("https://i.pinimg.com/originals/a1/1e/cb/a11ecbc857567a987d089750d9b7954c.png"),
+                                                              url("https://i.pinimg.com/originals/aa/0b/58/aa0b58a4debe1fd00e70b65e24f095b4.png"),
+                                                              url("https://i.pinimg.com/originals/9b/ad/65/9bad656628d8ddfe694f14b85c54ea7a.png"),
+                                                      }
+                                                      #img-inner:hover ~ label.sb-bignav { opacity: 0.5; }
+
+                                                      label.sb-bignav:hover { opacity: 1; }
+
+
+                                                      .sb-bignav {
+                                                          width: 200px;
+                                                          height: 100%;
+                                                          display: none;
+                                                          position: absolute;
+                                                          
+                                                          opacity: 0;
+                                                          z-index: 9;
+                                                          cursor: pointer;
+                                                          
+                                                          transition: opacity .2s;
+                                                          -moz-transition: opacity .2s;
+                                                          -webkit-transition: opacity .2s;
+                                                        
+                                                          color: white;
+                                                          font-size: 156pt;
+                                                          text-align: center;
+                                                          line-height: 380px;
+                                                          font-family: "Varela Round", sans-serif;
+                                                          background-color: rgba(255, 255, 255, .3);
+                                                          text-shadow: 0px 0px 15px rgb(119, 119, 119);
+                                                      }
+
+                                                      label[title="Next"] { right: 0; }
+
+                                                      input:checked + li > #img-inner {
+                                                          opacity: 1;
+                                                              
+                                                          transform: scale(1);
+                                                          -moz-transform: scale(1);
+                                                          -webkit-transform: scale(1);
+                                                          
+                                                          transition: opacity 1s ease-in-out;
+                                                          -moz-transition: opacity 1s ease-in-out;
+                                                          -webkit-transition: opacity 1s ease-in-out;
+                                                      }
+
+                                                      input:checked + li > label { display: block; }
+.Avaliações{
+  margin-top:28px ;
+}
+
+.Avaliações h1{
+  color:#1E7CBF;
+  display:flex;
+  justify-content:center;
+}
+
+.Estrela{
+  display:none;
+  justify-content:center;
+  text-align:center;
+}
+
+.slider {
+  display:flex;
+  justify-content:space-between;
+  text-align:center;
+}
+
+.perrito{
+  margin-top:50px ;
+}
+.Comprar {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.Avap{
+  margin-bottom: 40px;
+  margin-top:15px ;
+  font-size: 20px;
+  text-align:center
+}
+
+.Basico{
+			height: 475px;
+			text-align: center;
+			display: inline-block;
+			width: 30%;
+      border: #1E7CBF;
+      border-style:solid ;
+      border-radius:12px ;
+      font-size: 15px;
+    }
+  
+    .Basico button {
+  background-color: #4CAF50; /* Green */
+  color: white;
+  border: #000000;
+  border-radius:12px ;
+  padding: 10px 35px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 10px;
+  margin-top:35px ;
+}
+.Premium{
+			height: 475px;
+			text-align: center;
+			display: inline-block;
+			width: 30%;
+      border: #1E7CBF;
+      border-style:solid ;
+      border-radius:12px ;
+      font-size:15px ;
+    }
+  
+    .Premium button {
+  background-color: #4CAF50; /* Green */
+  color: white;
+  border: #1E7CBF;
+  border-radius:12px ;
+  padding: 10px 35px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 10px;
+  margin-top:35px ;
+}
+.Ultra{
+			height: 475px;
+			text-align: center;
+			display: inline-block;
+			width: 30%;
+      border: #1E7CBF;
+      border-style:solid ;
+      border-radius:12px ;
+      font-size: 15px;
+
+    }
+  
+    .Ultra button {
+  background-color: #4CAF50; /* Green */
+  color: white;
+  border: #000000;
+  border-radius:12px ;
+  padding: 10px 35px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 10px;
+  margin-top:16px ;
+}
+.Basico h3{
+  margin-top: 10px;
+}
+.Premium h3{
+  margin-top: 10px;
+}
+.Ultra h3{
+  margin-top: 10px;
+}
+.Tabelado{
+  display: flex;
+  justify-content: center;
+}
+                                                      
+</style>
+</head>
+
+ <body>
+  <div class="menu">
+   <div class="logo">
+  <a href="https://docs.google.com/presentation/d/1klU7IDGdalLJVXghQ-dmpq_iMlyu-9GdVbuAPJbdh6E/edit?usp=sharing" class="Manoel">Manual de Marca</a>
+    <img src="image-removebg-preview.png" height=150 width=250>
+  <a href="https://instagram.com/magnusrengus?igshid=OGQ5ZDc2ODk2ZA==
+  " class="Redes">Redes Sociais</a>
+  </div>   
+</div>
+   <div class="Produto" id="Produto">
+     <h1>Produto</h1>
+    <h1> <span class="Apre"> Apresentando o Sistema de Irrigação Inteligente Baseado em Umidade do Solo</span></h1>
+<br>
+<p> <span class="ApreP">Você já se viu preocupado com a saúde das suas plantas devido à falta ou excesso de água? Apresentamos a solução perfeita: o Sistema de Irrigação Inteligente Baseado em Umidade do Solo. Este inovador dispositivo revoluciona a forma como cuidamos das nossas plantas, tornando a irrigação mais eficiente e conveniente.<br>Veja a seguir algumas imagens do nosso produto!!!</span></p>
+<br>
+
+                          <ul id="body">
+                            <input type="radio" name="radio-btn" id="img-1" checked />
+                            <li id="img-container">
+                                <div id="img-inner">
+                                    <img src="https://i.pinimg.com/originals/a1/1e/cb/a11ecbc857567a987d089750d9b7954c.png">
+                                </div>
+                                <label for="img-6" class="sb-bignav" title="Previous">&#x2039;</label>
+                                <label for="img-2" class="sb-bignav" title="Next">&#x203a;</label>
+                            </li>
+                            
+                            <input type="radio" name="radio-btn" id="img-2" />
+                            <li id="img-container">
+                                <div id="img-inner">
+                                    <img src="https://i.pinimg.com/originals/aa/0b/58/aa0b58a4debe1fd00e70b65e24f095b4.png">
+                                </div>
+                                <label for="img-1" class="sb-bignav" title="Previous">&#x2039;</label>
+                                <label for="img-3" class="sb-bignav" title="Next">&#x203a;</label>
+                            </li>
+                            
+                            <input type="radio" name="radio-btn" id="img-3" />
+                            <li id="img-container">
+                                <div id="img-inner">
+                                    <img src="https://i.pinimg.com/originals/9b/ad/65/9bad656628d8ddfe694f14b85c54ea7a.png">
+                                </div>
+                                <label for="img-2" class="sb-bignav" title="Previous">&#x2039;</label>
+                                <label for="img-4" class="sb-bignav" title="Next">&#x203a;</label>
+                            </li>
+                        </ul>
+<b><h1><span class="Como">Como Funciona:</span></h1></b>
+<br>
+<b><p><span class="Parat1">Monitoramento de Umidade:</b> <span class="Parat">Nosso sistema utiliza sensores de umidade avançados para monitorar constantemente a umidade do solo ao redor das suas plantas. Esses sensores estão estrategicamente posicionados na área de plantio.</span></p>
+<br>
+<b><p><span class="Parat1">Análise em Tempo Real:</b> <span class="Parat">O dispositivo processa as informações dos sensores em tempo real e avalia o nível de umidade no solo. Ele compara esses dados com as necessidades específicas de cada tipo de planta que você está cultivando.</span></p> 
+<br>
+<b> <p><span class="Parat1">Irrigação Precisa:</b> <span class="Parat"> Quando o sistema detecta que o solo está ficando muito seco e que suas plantas precisam de água, ele ativa automaticamente o sistema de irrigação. A quantidade de água liberada é calibrada com precisão para atender às necessidades das plantas, evitando o desperdício.</span></p>
+<br>
+<b><p> <span class="Parat1">Economia de Recursos:</b> <span class="Parat">Como resultado, você economiza água, tempo e esforço, garantindo que suas plantas recebam a quantidade certa de água quando necessário. Isso também contribui para a conservação da água e para a sustentabilidade ambiental.</span></p>
+<br>
+</div>
+
+  <br>
+  
+     <div class="Avaliações" id="Avaliações" >
+       <h1> Avaliações</h1>
+<p class="Avap">Avaliações sinceras e positivas de nossos clientes são a maior prova da eficácia e qualidade de nossos produtos. Ao longo do tempo, reunimos um tesouro de experiências que destacam como nossos produtos têm aprimorado a relação entre as pessoas e a natureza.<br> Com um foco especial na irrigação, temperatura e bem-estar das plantas, nossos produtos foram projetados para transformar seu relacionamento com a natureza.<br> Veja o que nossos clientes têm a dizer sobre como suas vidas e jardins foram transformados por essas inovações. Eles são a prova viva de que a harmonia com a natureza é ao seu alcance.</p>
+
+       <div class="slider">
+  <div class="slide"><img src="Cara 1.png" alt="Imagem 1" height="100" width="100">
+   <img src="https://clipart-library.com/new_gallery/104-1043568_5-star-rating-png.png" class="Estrela" alt="Estrela" height="25"  width="100">
+    <p>"Muito bom, esse produto fez eu voltar com a minha esposa!"</p>
+  </div>
+    <div class="slide"><img src="Cara 2.png" alt="Imagem 2" height="100" width="100">
+      <img src="https://clipart-library.com/new_gallery/104-1043568_5-star-rating-png.png" class="Estrela" alt="Estrela" height="25"  width="100">
+      <p>"É meio complicado quando você não utiliza o manual incluso!"</p>
+    </div>
+  <div class="slide"><img src="Cara 3.png" alt="Imagem 3" height="100" width="100">
+    <img src="https://clipart-library.com/new_gallery/104-1043568_5-star-rating-png.png" class="Estrela" alt="Estrela" height="25"  width="100">
+    <p>"Meu pai voltou a me aceitar depois que eu comprei isso!"</p>
+  </div>
+  <div class="slide"><img src="Cara 4.png" alt="Imagem 4" height="100" width="100">
+    <img src="https://clipart-library.com/new_gallery/104-1043568_5-star-rating-png.png" class="Estrela" alt="Estrela" height="25"  width="100">
+    <p>"Depois que vi uma propaganda eu quis comprar!"</p>
+  </div>
+</div>
+ <br>
+ <h1 class="perrito">Comprar</h1>
+ <div class="Comprar" id="Comprar">
+ <div class="Basico">
+        <img src="https://i.pinimg.com/originals/a1/1e/cb/a11ecbc857567a987d089750d9b7954c.png" height="200px" width="200px">
+        <h2>Basico</h2>
+        <p>O Agricultura Essencial é a escolha perfeita para quem busca uma solução sólida e acessível para suas necessidades agrícolas. Este sistema monitora a umidade do solo e oferece irrigação automatizada com recursos de economia de água. É fácil de configurar e é uma introdução ideal à tecnologia agrícola moderna. </p>
+        <h3><b>R$199,99</b></h3>
+        <a href="Error.html"><button type="button">Comprar</button></a>
+ </div>
+     <div class="Premium">
+        <img src="https://i.pinimg.com/originals/aa/0b/58/aa0b58a4debe1fd00e70b65e24f095b4.png" height="200px" width="200px" >
+        <h2>Premium</h2>
+        <p>O Agricultura Premium leva sua agricultura a um nível superior. Além de monitorar a umidade do solo e fornecer irrigação precisa, este sistema oferece recursos avançados, como controle remoto via aplicativo móvel e notificações em tempo real. É a escolha para aqueles que desejam mais conveniência e controle sobre suas plantas. </p>
+        <h3><b>R$249,99</b></h3>
+        <a href="Error.html"><button type="button">Comprar</button></a>
+    </div>
+       <div class="Ultra">
+             <img src="https://i.pinimg.com/originals/9b/ad/65/9bad656628d8ddfe694f14b85c54ea7a.png" height="200px" width="200px" >
+             <h2>Ultra</h2>
+             <p>O Agricultura Ultra é a solução completa e de ponta para agricultura de alto desempenho. Este sistema combina monitoramento de umidade, irrigação precisa e recursos avançados de análise de solo. Além disso, oferece uma interface de usuário intuitiva e conectividade com assistentes de voz. É a escolha para agricultores e jardineiros exigentes que buscam excelência.</p>
+             <h3><b>R$499,99</b></h3>
+             <a href="Error.html"><button type="button">Comprar</button></a>
+       </div>
+ </div>
+</body>
+</html>
